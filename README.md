@@ -17,6 +17,5 @@ This version calculates density w/o using SQL by using ArcGIS spatial functions 
 
 Links
 
-* [Configuring+Oracle+Net+Services+to+use+ST_Geometry+SQL+functions](https://www.google.com/search?
-q=Configuring+Oracle+Net+Services+to+use+ST_Geometry+SQL+functions)
+* [Configuring+Oracle+Net+Services+to+use+ST_Geometry+SQL+functions](https://www.google.com/search?q=Configuring+Oracle+Net+Services+to+use+ST_Geometry+SQL+functions)
 * [arcgis+python+toolbox+sde+geoprocessing ](https://www.google.com/search?q=arcgis+python+toolbox+sde+geoprocessing)
