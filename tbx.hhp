@@ -1,0 +1,14 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=seismotbx.chm
+Display compile progress=Yes
+Full-text search=Yes
+Language=0x419 Russian
+Title=seismodensity
+
+
+[FILES]
+tbxhelp.htm
+
+[INFOTYPES]
+

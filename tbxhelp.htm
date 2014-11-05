@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN" "http://www.w3.org/Math/DTD/mathml2/xhtml-math11-f.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://dublincore.org/documents/dcmi-terms/">
+<!--This file was converted to xhtml by OpenOffice.org - see http://xml.openoffice.org/odf2xhtml for more info.-->
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"><title>seismodens toolbox</title>
+
+<meta name="DCTERMS.title" content="" xml:lang="en-US">
+<meta name="DCTERMS.language" content="en-US" scheme="DCTERMS.RFC4646">
+<meta name="DCTERMS.source" content="http://xml.openoffice.org/odf2xhtml">
+<meta name="DCTERMS.issued" content="2012-10-18T17:32:03.97" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.modified" content="2012-10-18T18:34:24.76" scheme="DCTERMS.W3CDTF">
+<meta name="DCTERMS.provenance" content="" xml:lang="en-US">
+<meta name="DCTERMS.subject" content="," xml:lang="en-US">
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" hreflang="en">
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" hreflang="en">
+<link rel="schema.DCTYPE" href="http://purl.org/dc/dcmitype/" hreflang="en">
+<link rel="schema.DCAM" href="http://purl.org/dc/dcam/" hreflang="en">
+<style type="text/css">
+</style>
+</head>
+
+<body style="margin: 2cm; direction: ltr; max-width: 21.001cm;">
+<h2 class="P1">Тулбокс seismo.tbx</h2>
+<p class="P5">Справка к
+тулбоксу версии 2012-10-18</p>
+
+<p class="P5">Тулбокс
+содержит инструмент «density»,
+позволяющий подсчитать
+значение плотности сейсмоизученности для указанного участка.</p>
+<p class="P5">Входной
+параметр один, по имени «<span style="font-weight: bold;">inputPolygon</span>», представляет собой полигон,
+внутри которого нужно узнать
+значение сейсмоплотности. Тип параметра «FeatureSet».
+Несмотря на то, что данный
+тип позволяет задать на
+входе много полигонов, обработан будет только один, первый.</p>
+
+
+<p class="P5">При задании
+полигона следует обеспечить выполнение требований ArcGIS к формату
+записи: координаты точек полигона (направление рисования) идут по
+часовой стрелке, нет самопересечений. Для автоматического исправления
+возможных ошибок ввода вы можете использовать службу ArcGIS <a href="http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer/simplify">http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer/simplify</a></p>
+
+
+
+
+
+<p class="P5">Выходных
+параметров три, в порядке следования:<br><span style="font-weight: bold;">seismoDens</span> — единицы измерения km/km2<br><span style="font-weight: bold;">profilesLength</span> — единицы измерения
+&nbsp;km<br><span style="font-weight: bold;">shapeArea</span> — единицы измерения km2<br>Тип
+параметров «double», значение по умолчанию «-1.0».</p>
+
+
+
+<p class="P5">Известные
+ограничения связаны с используемыми системами координат и заключаются в
+следующем.<br>Возможны сбои
+при вычислении на территории в зоне меридиана 180 градусов.<br>Вычисление
+сейсмоплотности для огромных территорий может также вызвать сбой.</p>
+<p class="P5">При работе
+инструмента используется фичекласс с данными сейсмопрофилей. Если
+доступа к этим данным нет, вычисления невозможны.</p><p class="P5">Если
+используется версия инструмента взаимодействующая с БД Oracle,
+необходимо обеспечить доступность используемых в этой БД данных и
+хранимой функции, выполняющей вычисления.</p>
+<p class="P5">&nbsp;</p>
+<p class="P7">&nbsp;</p>
+<p class="P3">&nbsp;</p><hr style="width: 100%; height: 2px;"><p class="P3"></p>
+
+<p class="P5">С вопросами и предложениями обращайтесь по
+адресу <a href="mailto:support_rn@allgis.org?subject=seismo.tbx.help">support@allgis.org</a><span class="T17">.<br></span><span class="T18">© </span><span class="T3">2012 ALGIS LLC (</span><a href="mailto:support_rn@allgis.org?subject=seismo.tbx.help">support@allgis.org</a>
+<span class="T3">)</span></p>
+</body></html>
